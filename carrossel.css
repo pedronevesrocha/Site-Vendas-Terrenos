@@ -1,0 +1,31 @@
+.sobre-nos-imagens {
+    width: 50%; /* define a largura do container de imagens */
+    float: right; /* alinha o container à direita da página */
+  }
+  
+  .sobre-nos-imagens h3 {
+    font-size: 1.5rem; /* define o tamanho do título */
+    margin-bottom: 1rem; /* define a margem inferior do título */
+  }
+  
+  .carousel {
+    display: flex; /* utiliza flexbox para alinhar as imagens em uma linha */
+    overflow-x: auto; /* habilita o scroll horizontal para permitir a visualização de todas as imagens */
+    scroll-snap-type: x mandatory; /* define o tipo de scroll como horizontal e força a rolagem a parar em cada imagem */
+  }
+  
+  .carousel img {
+    width: 200px; /* define a largura das imagens */
+    height: auto; /* mantém a proporção original da imagem */
+    scroll-snap-align: start; /* define o alinhamento da imagem para o início do container */
+    margin-right: 1rem; /* define uma margem à direita de cada imagem para criar um espaçamento entre elas */
+  }
+  
+  .carousel::-webkit-scrollbar {
+    height: 8px; /* define a altura da barra de rolagem */
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: #888; /* define a cor da barra de rolagem */
+  }
+  

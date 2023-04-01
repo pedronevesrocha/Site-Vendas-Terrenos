@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pagamentos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pagamento-cartao">
+        <h3>Insira as informações do cartão:</h3>
+        <form>
+          <label for="numero-cartao">Número do cartão:</label>
+          <input type="text" id="numero-cartao" name="numero-cartao"><br><br>
+          <label for="nome-cartao">Nome no cartão:</label>
+          <input type="text" id="nome-cartao" name="nome-cartao"><br><br>
+          <label for="validade-cartao">Validade:</label>
+          <input type="text" id="validade-cartao" name="validade-cartao"><br><br>
+          <label for="cvv-cartao">CVV:</label>
+          <input type="text" id="cvv-cartao" name="cvv-cartao"><br><br>
+          <input type="button" value="Pagar" onclick="processarPagamento()">
+        </form>
+      </div>
+      
+      <script>
+        function processarPagamento() {
+          // Obtém os valores dos campos do formulário
+          var numeroCartao = document.getElementById("numero-cartao").value;
+          var nomeCartao = document.getElementById("nome-cartao").value;
+          var validadeCartao = document.getElementById("validade-cartao").value;
+          var cvvCartao = document.getElementById("cvv-cartao").value;
+          
+          // Realiza o processamento do pagamento
+          // ...
+          
+          // Exibe uma mensagem de sucesso ou erro
+          // ...
+        }
+      </script>
+      
+</body>
+</html>
